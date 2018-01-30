@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/TextStyle.small2_bold"
+        android:text="week day"
+        android:id="@+id/weekday_list_item"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon_list_item"
+        android:layout_marginStart="300dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/rain"/>
+    <TextView
+        style="@style/TextStyle.description_item"
+        android:id="@+id/description_list_item"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentLeft="true"
+        android:text="rain"/>
+    <TextView
+        style="@style/TextStyle.max2Temp_item"
+        android:id="@+id/max_temp_list_item"
+        android:layout_below="@id/icon_list_item"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="100dp"
+        android:text="28" />
+    <TextView
+        style="@style/TextStyle.max2Temp_item"
+        android:id="@+id/min_temp_list_item"
+        android:layout_below="@id/icon_list_item"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="168dp"
+        android:text="20" />
+</RelativeLayout>

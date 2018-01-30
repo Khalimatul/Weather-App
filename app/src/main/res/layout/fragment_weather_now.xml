@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_weather">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview_weather">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clouds"
+                android:id="@+id/bg_weather"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                style="@style/TextStyle.update"
+                android:id="@+id/update_text_weather"
+                android:text="@string/update_time" />
+
+            <TextView
+                style="@style/TextStyle.big_bold"
+                android:layout_below="@+id/update_text_weather"
+                android:id="@+id/city_text_weather"
+                android:layout_marginTop="10dp"
+                android:text="@string/city" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/city_text_weather"
+                android:src="@drawable/clear"
+                android:layout_marginTop="10dp"
+                android:id="@+id/icon_image_weather"/>
+
+            <TextView
+                style="@style/TextStyle.big_bold"
+                android:id="@+id/description_text_weather"
+                android:layout_below="@+id/icon_image_weather"
+                android:text="Keterangan" />
+
+            <TextView
+                style="@style/TextStyle.big_bold"
+                android:id="@+id/humidity_text_weather"
+                android:layout_below="@+id/description_text_weather"
+                android:text="Humidity: 0 %" />
+
+            <TextView
+                style="@style/TextStyle.big_bold"
+                android:id="@+id/pressure_text_weather"
+                android:layout_below="@+id/humidity_text_weather"
+                android:text="Pressure: 0 hPa" />
+
+            <TextView
+                style="@style/TextStyle.Temperature"
+                android:id="@+id/temperature_text_weather"
+                android:layout_below="@+id/pressure_text_weather"
+                android:text="0 ℃" />
+
+            <TextView
+                style="@style/TextStyle.small_bold"
+                android:text="week day"
+                android:id="@+id/weekday_text_weather"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/temperature_text_weather"/>
+            <!--<TextView-->
+                <!--style="@style/TextStyle.small_bold"-->
+                <!--android:text="morning"-->
+                <!--android:id="@+id/morning_text_weather"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_below="@+id/weekday_text_weather"/>-->
+            <!--<TextView-->
+                <!--style="@style/TextStyle.small_bold"-->
+                <!--android:text="day"-->
+                <!--android:id="@+id/day_text_weather"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginLeft="185dp"-->
+                <!--android:layout_below="@+id/weekday_text_weather"/>-->
+
+            <TextView
+                style="@style/TextStyle.small_bold"
+                android:text="@string/max_temp"
+                android:id="@+id/maxTemp_text_weather"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="60dp"
+                android:layout_below="@+id/temperature_text_weather"/>
+
+            <TextView
+                style="@style/TextStyle.small_bold"
+                android:text="@string/min_temp"
+                android:id="@+id/minTemp_text_weather"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:textColor="#CC000000"
+                android:layout_below="@+id/temperature_text_weather"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weekday_text_weather"
+                android:layout_centerHorizontal="true"
+                android:text="Daily"
+                android:onClick="fragment_weather2"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

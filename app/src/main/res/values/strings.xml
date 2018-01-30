@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Accurate Weather</string>
+
+    <string name="actionbar_search">ActionBar Search</string>
+    <string name="actionbar_settings">ActionBar Settings</string>
+    <string name="search_city">Search ...</string>
+
+    <string name="update_time">Last Update</string>
+    <string name="city">City, Country</string>
+
+    <string name="max_temp">max</string>
+    <string name="min_temp">min</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
